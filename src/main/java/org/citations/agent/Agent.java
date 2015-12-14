@@ -22,37 +22,6 @@ import java.util.List;
 public class Agent {
 
     private Logger log = Logger.getLogger(Agent.class);
-//
-//    public String getJournalArticles(String urlFull) throws Exception {
-//        URL url;
-//        String fileName = null;
-//        url = new URL(urlFull);
-//        CookieHandler.setDefault(new CookieManager(null, CookiePolicy.ACCEPT_ALL));
-//        URLConnection conn = url.openConnection();
-//        BufferedReader br = new BufferedReader(
-//                new InputStreamReader(conn.getInputStream()));
-//        String inputLine;
-//        StringBuilder sb = new StringBuilder();
-//        while ((inputLine = br.readLine()) != null) {
-//            sb.append(inputLine);
-//        }
-//        br.close();
-//        org.jsoup.nodes.Document doc = Jsoup.parse(sb.toString());
-//        Element table = doc.getElementById("restab");
-//        Elements trs = table.getElementsByTag("tr");
-//        List<Citation> citationList = new ArrayList<Citation>();
-//        if (trs != null && trs.size() > 0)
-//            for (int i = 1; i < trs.size(); i++) {
-//                Element tr = trs.get(i);
-//                if (tr.childNodes() != null && tr.childNodes().size() == 4) {
-//                    List<Node> tds = tr.childNodes();
-//                    Node td = tds.get(1);
-////                    citationList.add(new Citation(td.childNode(0).childNode(0).childNode(0).toString(), td.childNode(2).childNode(0).childNode(0).toString(), ""));
-//                }
-//            }
-//        fileName = this.savetoFile(citationList,use);
-//        return fileName;
-//    }
 
     private String savetoFile(List<Citation> citationList, String userName) throws Exception {
         if (citationList == null || citationList.size() == 0)
@@ -89,6 +58,7 @@ public class Agent {
             url = new URL(urlFull);
             CookieHandler.setDefault(new CookieManager(null, CookiePolicy.ACCEPT_ALL));
             URLConnection conn = url.openConnection();
+            //TODO cookie issue
             conn.setRequestProperty("Cookie", "SesCookieID=392846974; UserID=173871986; _ym_uid=1450029282156305229; _ym_isad=1; __utmt=1; __utma=216042306.751378257.1450029282.1450034930.1450035493.3; __utmb=216042306.7.10.1450035493; __utmc=216042306; __utmz=216042306.1450035493.3.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)");
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(conn.getInputStream()));

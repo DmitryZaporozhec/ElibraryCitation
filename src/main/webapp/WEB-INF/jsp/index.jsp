@@ -19,7 +19,7 @@
 <body>
 <div class="container">
     <form id="getCitations" action="/citations/" method="get">
-        <h3>Экспортирование списка публикаций с <br><a href="http://elibrary.ru" target="_blank"><img src="/img/elibrary_logo.svg"/></a>
+        <h3>Экспорт списка публикаций из <br><a href="http://elibrary.ru" target="_blank"><img src="/img/elibrary_logo.svg"/></a>
         </h3>
         <label for="inputURL" class="sr-only">Ссылка на работы автора</label>
         <input type="text" id="inputURL" name="inputURL" class="form-control width-500"

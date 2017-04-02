@@ -38,7 +38,7 @@ public class Agent {
         }
         FileWriter fw = new FileWriter(f);
         for (int i = 0; i < citationList.size(); i++) {
-            fw.append(i + ". " + citationList.get(i).toString());
+            fw.append((i+1) + ". " + citationList.get(i).toString());
         }
         fw.flush();
         fw.close();
@@ -59,7 +59,7 @@ public class Agent {
             CookieHandler.setDefault(new CookieManager(null, CookiePolicy.ACCEPT_ALL));
             URLConnection conn = url.openConnection();
             //TODO cookie issue
-            conn.setRequestProperty("Cookie", "SesCookieID=392846974; UserID=173871986; _ym_uid=1450029282156305229; _ym_isad=1; __utmt=1; __utma=216042306.751378257.1450029282.1450034930.1450035493.3; __utmb=216042306.7.10.1450035493; __utmc=216042306; __utmz=216042306.1450035493.3.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)");
+            conn.setRequestProperty("Cookie", "SCookieID=567512474; _ym_uid=1490723324285349487; SUserID=232586493; __utmt=1; _ym_isad=1; __utma=216042306.1488125818.1490723323.1490723323.1491152836.2; __utmb=216042306.5.10.1491152836; __utmc=216042306; __utmz=216042306.1490723323.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)");
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(conn.getInputStream()));
             String inputLine;

@@ -1,5 +1,7 @@
 package org.citations.model;
 
+import com.mysql.jdbc.StringUtils;
+
 import java.util.List;
 
 /**
@@ -75,16 +77,29 @@ public class Citation {
         this.number = number;
     }
 
+    private String authorsToString() {
+        StringBuilder sb = new StringBuilder();
+        if (authors != null) {
+            for (String a : authors) {
+                sb.append(a);
+                sb.append(", ");
+            }
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.deleteCharAt(sb.length() - 1);
+        return sb.toString();
+    }
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer();
-        sb.append(authors);
+        sb.append(this.authorsToString());
         sb.append(", ");
         sb.append(name);
         sb.append(" // ");
         sb.append(publishInfo);
         sb.append(", ");
-        if (number!=null){
+        if (number != null) {
             sb.append(number);
             sb.append(", ");
         }

@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building elibrary-citations 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.2.1.RELEASE:run (default-cli) @ elibrary-citations >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ elibrary-citations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ elibrary-citations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ elibrary-citations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /app/ElibraryCitation/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ elibrary-citations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.2.1.RELEASE:run (default-cli) @ elibrary-citations <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.2.1.RELEASE:run (default-cli) @ elibrary-citations ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.1.RELEASE)
+
+2017-01-28 16:28:38.959  INFO 2621 --- [lication.main()] org.citations.configuration.Application  : Starting Application on centOS with PID 2621 (/app/ElibraryCitation/target/classes started by root in /app/ElibraryCitation)
+2017-01-28 16:28:39.058  INFO 2621 --- [lication.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59f39794: startup date [Sat Jan 28 16:28:39 MSK 2017]; root of context hierarchy
+2017-01-28 16:28:40.593  INFO 2621 --- [lication.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-01-28 16:28:42.884  INFO 2621 --- [lication.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-01-28 16:28:43.700  INFO 2621 --- [lication.main()] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-01-28 16:28:43.705  INFO 2621 --- [lication.main()] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.15
+2017-01-28 16:28:44.720  INFO 2621 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-01-28 16:28:44.721  INFO 2621 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5670 ms
+2017-01-28 16:28:46.669  INFO 2621 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-01-28 16:28:46.682  INFO 2621 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-01-28 16:28:46.686  INFO 2621 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-01-28 16:28:49.353  INFO 2621 --- [ost-startStop-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,663] milliseconds.
+2017-01-28 16:28:50.124  INFO 2621 --- [lication.main()] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@59f39794: startup date [Sat Jan 28 16:28:39 MSK 2017]; root of context hierarchy
+2017-01-28 16:28:50.318  INFO 2621 --- [lication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/citations],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.citations.controller.IndexController.getIndex(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception
+2017-01-28 16:28:50.332  INFO 2621 --- [lication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2017-01-28 16:28:50.333  INFO 2621 --- [lication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-01-28 16:28:50.421  INFO 2621 --- [lication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-28 16:28:50.422  INFO 2621 --- [lication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-28 16:28:50.585  INFO 2621 --- [lication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-28 16:28:50.853  INFO 2621 --- [lication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-01-28 16:28:51.110  INFO 2621 --- [lication.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-01-28 16:28:51.116  INFO 2621 --- [lication.main()] org.citations.configuration.Application  : Started Application in 12.816 seconds (JVM running for 20.944)
+2017-01-28 16:29:27.198  INFO 2621 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-01-28 16:29:27.199  INFO 2621 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-01-28 16:29:27.260  INFO 2621 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2017-01-30 18:37:40.760  WARN 2621 --- [nio-8080-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-02-01 08:07:34.155  INFO 2621 --- [nio-8080-exec-3] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-02-02 16:54:39.149  INFO 2621 --- [nio-8080-exec-3] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-02-03 23:09:22.978  INFO 2621 --- [nio-8080-exec-2] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-02-08 04:03:14.220  INFO 2621 --- [nio-8080-exec-9] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-02-09 11:14:14.982  INFO 2621 --- [nio-8080-exec-9] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-02-14 00:37:33.416  WARN 2621 --- [nio-8080-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-02-17 02:00:14.316  INFO 2621 --- [nio-8080-exec-5] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-02-19 13:04:04.765  WARN 2621 --- [nio-8080-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-02-19 18:21:46.018  WARN 2621 --- [io-8080-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-02-24 17:13:19.031  WARN 2621 --- [io-8080-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-02-25 11:36:02.416  WARN 2621 --- [nio-8080-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-02-27 15:26:15.085  WARN 2621 --- [nio-8080-exec-2] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-01 05:16:38.175  WARN 2621 --- [nio-8080-exec-7] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-02 08:00:04.561  INFO 2621 --- [nio-8080-exec-7] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-03 10:58:43.299  WARN 2621 --- [nio-8080-exec-9] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-04 13:19:47.728  INFO 2621 --- [nio-8080-exec-9] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-06 06:14:49.721  INFO 2621 --- [nio-8080-exec-2] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-06 17:27:50.936  WARN 2621 --- [nio-8080-exec-4] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-07 00:52:37.221  WARN 2621 --- [nio-8080-exec-7] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-07 06:59:29.958  INFO 2621 --- [nio-8080-exec-8] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-08 07:42:14.650  WARN 2621 --- [nio-8080-exec-1] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-09 02:52:37.072  INFO 2621 --- [nio-8080-exec-6] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-12 22:44:59.912  WARN 2621 --- [nio-8080-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-15 01:43:16.423  INFO 2621 --- [nio-8080-exec-2] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-17 05:15:38.611  INFO 2621 --- [nio-8080-exec-5] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-21 16:16:03.330  INFO 2621 --- [nio-8080-exec-3] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-23 13:23:25.721  WARN 2621 --- [nio-8080-exec-8] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-28 00:07:54.914  WARN 2621 --- [nio-8080-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-30 13:16:09.126  WARN 2621 --- [nio-8080-exec-6] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-03-31 02:46:15.166  INFO 2621 --- [io-8080-exec-10] o.a.coyote.http11.Http11NioProcessor     : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+2017-03-31 22:29:27.978  WARN 2621 --- [nio-8080-exec-5] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
+2017-04-01 21:41:13.647  WARN 2621 --- [io-8080-exec-10] o.s.web.servlet.PageNotFound             : Request method 'POST' not supported
